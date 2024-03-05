@@ -44,7 +44,7 @@ namespace PlanetunAPI.Services
                 Directory.CreateDirectory(path);
 
             using (StreamWriter sw = File.CreateText($"{path}\\{fileName}"))
-                sw.WriteLine(sb.ToString());
+                await sw.WriteLineAsync(sb.ToString());
 
         }
     }
