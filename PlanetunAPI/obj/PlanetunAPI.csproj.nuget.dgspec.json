@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Claudio\\source\\repos\\PlanetunAPI\\PlanetunAPI\\PlanetunAPI.csproj": {}
+    "C:\\PlanetunTest\\API-Rest-Net-7\\PlanetunAPI\\PlanetunAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Claudio\\source\\repos\\PlanetunAPI\\PlanetunAPI\\PlanetunAPI.csproj": {
+    "C:\\PlanetunTest\\API-Rest-Net-7\\PlanetunAPI\\PlanetunAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Claudio\\source\\repos\\PlanetunAPI\\PlanetunAPI\\PlanetunAPI.csproj",
+        "projectUniqueName": "C:\\PlanetunTest\\API-Rest-Net-7\\PlanetunAPI\\PlanetunAPI.csproj",
         "projectName": "PlanetunAPI",
-        "projectPath": "C:\\Users\\Claudio\\source\\repos\\PlanetunAPI\\PlanetunAPI\\PlanetunAPI.csproj",
+        "projectPath": "C:\\PlanetunTest\\API-Rest-Net-7\\PlanetunAPI\\PlanetunAPI.csproj",
         "packagesPath": "C:\\Users\\Claudio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Claudio\\source\\repos\\PlanetunAPI\\PlanetunAPI\\obj\\",
+        "outputPath": "C:\\PlanetunTest\\API-Rest-Net-7\\PlanetunAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

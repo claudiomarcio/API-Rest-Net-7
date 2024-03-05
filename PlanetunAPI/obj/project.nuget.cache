@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pgTQwNJ9iI+VH1g/q9FhsgZ5D9MDjfOSrQ/4SNi7Ub5e6j9rwPWfq8dRCItW79LtgCz/Z81EhjBPhHkrdEOyaw==",
+  "dgSpecHash": "ANL8KQHUTOFfDAI3f/n2SMRPCpAMZRkZz+15Dk0aVUf4wp1E/Ax6I7CspL5g6a1sDd534StIxu6yzBpoKDKvdw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Claudio\\source\\repos\\PlanetunAPI\\PlanetunAPI\\PlanetunAPI.csproj",
+  "projectFilePath": "C:\\PlanetunTest\\API-Rest-Net-7\\PlanetunAPI\\PlanetunAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Claudio\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\Claudio\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

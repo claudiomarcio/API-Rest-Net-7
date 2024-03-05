@@ -18,7 +18,7 @@ namespace PlanetunAPI.Services
 
         public async Task GenerateMultiplationTable(IEnumerable<int> numbers)
         {
-            await Parallel.ForEachAsync(numbers, async (i, cancellationToken) =>
+            await Parallel.ForEachAsync(numbers, new ParallelOptions { MaxDegreeOfParallelism = 5 }, async (i, cancellationToken) =>
             {
                 StringBuilder sb = new StringBuilder();
 
@@ -40,11 +40,11 @@ namespace PlanetunAPI.Services
                 File.Delete($"{path}\\{fileName}");
 
 
-            if(!Directory.Exists(path))
+            if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
 
-            using (StreamWriter sw = File.CreateText($"{path}\\{fileName}"))            
-                sw.WriteLine(sb.ToString());             
+            using (StreamWriter sw = File.CreateText($"{path}\\{fileName}"))
+                sw.WriteLine(sb.ToString());
 
         }
     }
