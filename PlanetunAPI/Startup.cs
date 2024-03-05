@@ -17,42 +17,33 @@ namespace webapi
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
 
-            services.AddTransient<IPlanetunService, PlanetunService>();          
-                  
+            services.AddTransient<IPlanetunService, PlanetunService>();
+
             services.AddCors(options =>
             {
-                options.AddPolicy("AllowAll",
-                    builder =>
-                    {
-                        builder
-                        .AllowAnyOrigin()
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
                         .AllowAnyMethod()
-                        .AllowAnyHeader()
-                        .AllowCredentials();
-                    });
+                        .AllowAnyHeader());
             });
-            //services.Configure<MvcOptions>(options => {
-            //    options.Filters.Add(new CorsAuthorizationFilterFactory("AllowAll"));
-            //});
 
-            services.AddMvc();
-            services.AddCors();
+            services.AddMvc();          
 
         }
 
         public void Configure(WebApplication app)
         {
-            // Configure the HTTP request pipeline.
-            if (app. Environment.IsDevelopment())
+            
+            if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
 
+            app.UseCors("CorsPolicy");
+            app.UseRouting();
             app.UseHttpsRedirection();
-            app.UseAuthorization();
             app.MapControllers();
-
         }
     }
 }

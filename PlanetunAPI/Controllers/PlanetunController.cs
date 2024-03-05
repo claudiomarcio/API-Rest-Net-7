@@ -21,7 +21,7 @@ namespace PlanetunAPI.Controllers
 
          
         [HttpPost("v1/[controller]/CriarTabuada")]
-        public async Task RunMultiplicationTable(IEnumerable<int> numbers)
+        public async Task RunMultiplicationTable([FromBody]IEnumerable<int> numbers)
         {
             await _planetunService.GenerateMultiplationTable(numbers);
         }
